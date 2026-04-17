@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>PS</title>
+    <style>
+        body {
+            background-color: #2b2b2b;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+
+        .ejemplo {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            width: 60%;
+            margin: 15px auto;
+            padding: 10px;
+        }
+
+        hr {
+            border: 3px solid white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comando PS</h1>
+    <p>El comando PS muestra información sobre los procesos en ejecución en el sistema.</p>
+    <p>Permite ver qué programas están activos, quién los ejecuta y cuántos recursos usan.</p>
+
+    <hr>
+
+    <h3>Opciones comunes</h3>
+    <p><b>aux</b>: muestra todos los procesos del sistema con información detallada.</p>
+    <div class="ejemplo">ps aux</div>
+
+    <hr>
+
+    <p><b>-ef</b>: muestra procesos en formato completo (muy usado en sistemas Linux).</p>
+    <div class="ejemplo">ps -ef</div>
+
+    <hr>
+
+    <p><b>-u usuario</b>: muestra procesos de un usuario específico.</p>
+    <div class="ejemplo">ps -u root</div>
+
+    <hr>
+
+    <p><b>Filtrar con grep</b>: permite buscar un proceso concreto.</p>
+    <div class="ejemplo">ps aux | grep firefox</div>
+   
+    <hr>
+
+    <br><br>
+    <a href="menuComandos.html" style="color: lightblue;">Volver al menú</a>
+</body>
+</html>
