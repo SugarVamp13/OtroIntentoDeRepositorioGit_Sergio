@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comando CUT</title>
+    <style>
+        body {
+            background-color: #2b2b2b;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+
+        .ejemplo {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            width: 60%;
+            margin: 15px auto;
+            padding: 10px;
+        }
+
+        hr {
+            border: 3px solid white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comando CUT</h1>
+    <p>Este comando se utiliza para extraer partes específicas de texto de un archivo o entrada.</p>
+    <hr>
+
+    <h2>-d</h2>
+    <p>Define el delimitador que separa los campos.</p>
+    <div class="ejemplo">cut -d "," -f 1 archivo.csv</div>
+    <hr>
+
+    <h2>-f</h2>
+    <p>Selecciona el campo que se quiere mostrar.</p>
+    <div class="ejemplo">cut -d ":" -f 2 archivo.txt</div>
+    <hr>
+
+    <br><br>
+    <a href="menuComandos.html" style="color: lightblue;">Volver al menú</a>
+</body>
+</html>
