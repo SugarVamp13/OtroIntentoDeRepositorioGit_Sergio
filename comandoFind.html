@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comando FIND</title>
+    <style>
+        body {
+            background-color: #2b2b2b;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+
+        .ejemplo {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            width: 60%;
+            margin: 15px auto;
+            padding: 10px;
+        }
+
+        hr {
+            border: 3px solid white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comando FIND</h1>
+    <p>Este comando se utiliza para buscar archivos y directorios, basandose en criterios específicos como nombre, 
+    tamaño, fecha de modificación, permisos o usuario.</p>
+    <hr>
+
+    <h2>-name o -iname</h2>
+    <p>Permite filtrar por nombre de archivo.</p>
+    <h4>Ejemplo</h4>
+    <div class="ejemplo">find /home -name archivo.txt</div>
+    <hr>
+
+    <h2>-perm</h2>
+    <p>Filtra la busqueda de archivos por permisos.</p>
+    <div class="ejemplo">find / -perm 777</div>
+    <hr>
+
+    <h2>-mtime, -ctime o -atime</h2>
+    <p>Filtra la busqueda de archivos por marca de tiempo</p>
+    <div class="ejemplo">find /home -mtime -7</div>
+    <hr>
+
+    <h2>-exec</h2>
+    <p>Permite ejecutar comandos sobre los resultados.</p>
+    <div class="ejemplo">find . -name "*.txt" -exec rm {} \;</div>
+    <hr>
+
+    <h2>-size</h2>
+    <p>Filtra la busqueda de archivos por su tamaño</p>
+    <div class="ejemplo">find / -size +100M</div>
+    <hr>
+    <br><br>
+    <a href="menuComandos.html" style="color: lightblue;">Volver al menú</a>
+</body>
+</html>

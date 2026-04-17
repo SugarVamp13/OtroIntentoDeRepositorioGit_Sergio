@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>GREP</title>
+    <style>
+        body {
+            background-color: #2b2b2b;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+
+        .ejemplo {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            width: 60%;
+            margin: 15px auto;
+            padding: 10px;
+        }
+
+        hr {
+            border: 3px solid white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comando GREP</h1>
+    <p>El comando GREP busca texto dentro de archivos usando patrones.</p>
+    <p>Es muy utilizado para filtrar información en la terminal.</p>
+
+    <hr>
+
+    <h3>Uso básico</h3>
+    <div class="ejemplo">grep "texto" archivo.txt</div>
+
+    <hr>
+
+    <h3>Opciones comunes</h3>
+    <p><b>-i</b>: ignora mayúsculas y minúsculas.</p>
+    <div class="ejemplo">grep -i "error" log.txt</div>
+
+    <hr>
+
+    <p><b>-r</b>: busca de forma recursiva en directorios.</p>
+    <div class="ejemplo">grep -r "main" /home</div>
+
+    <hr>
+
+    <p><b>-n</b>: muestra el número de línea.</p>
+    <div class="ejemplo">grep -n "texto" archivo.txt</div>
+
+    <hr>
+
+    <p><b>-v</b>: muestra las líneas que NO coinciden.</p>
+    <div class="ejemplo">grep -v "error" log.txt</div>
+
+    <hr>
+
+    <h3>Uso combinado</h3>
+    <div class="ejemplo">ps aux | grep apache</div>
+    
+    <hr>
+    
+    <br><br>
+    <a href="menuComandos.html" style="color: lightblue;">Volver al menú</a>
+</body>
+</html>
